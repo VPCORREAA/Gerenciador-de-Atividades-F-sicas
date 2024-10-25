@@ -41,11 +41,11 @@ Este projeto é um gerenciador de atividades físicas em C, que permite ao usuá
    ```
 
 ## Futuras Melhorias
-
+- Interface
 - Implementar o armazenamento das atividades em um arquivo binário.
 - Adicionar funcionalidades de edição e remoção de atividades.
 - Criar um relatório de atividades em formato de texto.
-
+- rotas
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
