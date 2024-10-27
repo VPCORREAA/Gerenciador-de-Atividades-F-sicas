@@ -15,9 +15,7 @@ Este programa permite que os usuários registrem e gerenciem suas atividades fí
 
 - `gerenciador_atividades_fisicas.c`: Código-fonte do programa.
 - `atividades.bin`: Arquivo binário onde as atividades são armazenadas.
-
-## Compilação e Execução
-
+```
 ### Compilar
 
 Para compilar o programa, execute o seguinte comando no terminal:
