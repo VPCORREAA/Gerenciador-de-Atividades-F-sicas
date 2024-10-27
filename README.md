@@ -1,53 +1,50 @@
+
+```markdown
 # Gerenciador de Atividades Físicas
 
-## Descrição
-
-Este projeto é um gerenciador de atividades físicas em C, que permite ao usuário registrar e visualizar informações sobre suas atividades físicas, como tipo, duração e calorias queimadas. O programa é uma base para futuras melhorias, incluindo a funcionalidade de armazenamento em arquivos binários.
+Este programa permite que os usuários registrem e gerenciem suas atividades físicas. As atividades incluem tipo, duração em minutos e calorias queimadas. Os dados são armazenados em um arquivo binário para manter um histórico persistente de atividades.
 
 ## Funcionalidades
 
-- **Registro de Atividades**: O usuário pode inserir informações sobre diferentes atividades físicas, incluindo:
-  - Tipo de atividade (ex: corrida, ciclismo, etc.)
-  - Duração da atividade em minutos
-  - Calorias queimadas durante a atividade
+- Registrar diferentes tipos de atividades físicas.
+- Armazenar a duração e calorias queimadas para cada atividade.
+- Carregar e salvar as atividades registradas em um arquivo binário.
+- Exibir todas as atividades registradas.
 
-- **Exibição de Atividades**: Após o registro, o programa exibe todas as atividades registradas pelo usuário.
+## Arquivos
 
-## Estrutura do Código
+- `gerenciador_atividades_fisicas.c`: Código-fonte do programa.
+- `atividades.bin`: Arquivo binário onde as atividades são armazenadas.
 
-- **Estruturas de Dados**: Utiliza uma struct `Atividade` para armazenar as informações de cada atividade.
-- **Entrada de Dados**: Coleta as informações através do console, permitindo múltiplas entradas até que o usuário decida parar.
-- **Exibição**: Mostra uma lista das atividades registradas no final.
+## Compilação e Execução
 
-## Tecnologias Utilizadas
+### Compilar
 
-- Linguagem de Programação: C
+Para compilar o programa, execute o seguinte comando no terminal:
 
-## Como Executar
+```bash
+gcc -o gerenciador_atividades gerenciador_atividades_fisicas.c
+```
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/gerenciador-atividades-fisicas.git
-   ```
+### Executar
 
-2. **Compile o código**:
-   ```bash
-   gcc -o gerenciador atividades_fisicas.c
-   ```
+Após compilar, execute o programa com o comando:
 
-3. **Execute o programa**:
-   ```bash
-   ./gerenciador
-   ```
+```bash
+./gerenciador_atividades
+```
 
-## Futuras Melhorias
-- Interface
-- Implementar o armazenamento das atividades em um arquivo binário.
-- Adicionar funcionalidades de edição e remoção de atividades.
-- Criar um relatório de atividades em formato de texto.
-- rotas
+## Uso
+
+1. Ao iniciar o programa, você pode registrar atividades físicas fornecendo o tipo de atividade, duração e calorias queimadas.
+2. Após registrar as atividades, elas são salvas no arquivo `atividades.bin`.
+3. O programa também carrega atividades previamente registradas ao ser iniciado, permitindo que você adicione mais atividades ao histórico.
+4. Após finalizar as entradas, o programa exibe todas as atividades registradas.
+
+## Limites
+
+- O programa suporta o registro de até 100 atividades por vez.
+
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
